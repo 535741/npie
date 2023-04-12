@@ -6,7 +6,7 @@
 int menu(void){
     char input[15];
     int out;
-    printf("Pi to n digits(decimal included). n = \n");
+    printf("Pi to n digits.\nn = ");
     fflush(stdout);
     fgets(input, 15, stdin);
     sscanf(input, "%i", &out);
