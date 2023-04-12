@@ -14,10 +14,7 @@ int menu(void){
 }
 
 int main(void){
-    unsigned int p;
-    unsigned int g;
     int b;
-    p = 1;
     int in = 1+menu();
     mpfr_prec_t x = 4*in;
     b = 10;
