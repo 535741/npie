@@ -4,11 +4,11 @@
 #include <mpfr.h>
 
 int menu(void){
-    char input[15];
+    char input[100];
     int out;
     printf("Pi to n=\n");
     fflush(stdout);
-    fgets(input, 15, stdin);
+    fgets(input, 100, stdin);
     sscanf(input, "%i", &out);
     return out;
 }
