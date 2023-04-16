@@ -14,10 +14,9 @@ int menu(void){
 }
 
 int main(void){
-    int b;
+    int b = 10;
     int in = 1+menu();
     mpfr_prec_t x = 4*in;
-    b = 10;
     mpfr_t y;
     mpfr_init2(y, x);
     mpfr_const_pi(y, MPFR_RNDF);
@@ -27,4 +26,3 @@ int main(void){
     mpfr_clear(y);
     mpfr_mp_memory_cleanup();
 }
-
